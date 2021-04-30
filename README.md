@@ -16,6 +16,7 @@ Currently, the following is covered
 - [X] font-lock
 - [X] widgets
 - [X] show-paren
+- [X] undo-tree
 - [X] ido
 - [X] rainbow-delimiters (In actual rainbow colors! 🌈)
 - [X] Magit
@@ -33,7 +34,7 @@ to send a pull request.
 ### Manual
 
 Either from [MELPA](https://melpa.org/), `M-x package-install RET tabak-theme RET`, or
-by copying into your `load-path`. Then
+by copying the repo into your `load-path`. Then
 
 ```
 (require 'tabak-theme)
@@ -45,9 +46,9 @@ by copying into your `load-path`. Then
 (tabak-theme-dark)
 ```
 
-`tabak-theme` utilizes Emacs's `frame-background-mode` to determine
-colors. To toggle between dark and light variants the function
-`tabak-toggle` is provided. I is convenient to bind this globally,
+`tabak-theme` uses `frame-background-mode` to determine
+colors. To toggle between dark and light variants, the function
+`tabak-toggle` is provided. It is convenient to bind this globally,
 for example
 
 ```
