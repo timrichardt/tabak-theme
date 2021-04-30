@@ -19,13 +19,14 @@ Currently, the following is covered
 - [X] ido
 - [X] rainbow-delimiters (In actual rainbow colors! 🌈)
 - [X] Magit
+- [X] Org
 - [X] Cider
 - [X] SLIME
 - [X] ERC
 - [ ] mu4e (from 2015, probably deprecated)
 
-Please, report any problems on the issue tracker. Also do not hesitate
-to send a pull request, if you want to add something.
+Please, report any problems on the issue tracker. If you want to add something, do not hesitate
+to send a pull request.
 
 ## Installation
 
