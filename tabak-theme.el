@@ -7,11 +7,12 @@
 ;;                 ╚═╝   ╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
 ;;                        C O L O R   T H E M E
 ;;
-;; Copyright (C) 2015-2017 Tim Richardt <tim@snafu.cc>
-;; This work is free. You can redistribute it and/or modify it under the
-;; terms of the Do What The Fuck You Want To Public License, Version 2,
-;; as published by Sam Hocevar. See http://www.wtfpl.net/ for more
-;; details.
+;; ----------------------------------------------------------------------------
+;;  "THE BEER-WARE LICENSE" (Revision 42):
+;;  <tim@richardt.io> wrote this file. As long as you retain this notice you
+;;  can do whatever you want with this stuff. If we meet some day, and you think
+;;  this stuff is worth it, you can buy me a beer in return.
+;;  ----------------------------------------------------------------------------
 
 (deftheme tabak
   "This is a dark/light Emacs color theme. The dark palette is a brownish
@@ -73,14 +74,29 @@ TABAK-PALETTE."
     `((((background light)) ,light)
       (((background dark)) ,dark))))
 
+
+(defun tabak-theme-dark ()
+  "Enable tabak theme. Set FRAME-BACKGROUND-MODE to dark."
+  (interactive)
+  (setq frame-background-mode 'dark)
+  (mapc 'frame-set-background-mode (frame-list))
+  (enable-theme 'tabak))
+
+(defun tabak-theme-light ()
+  "Enable tabak theme. Set FRAME-BACKGROUND-MODE to light."
+  (interactive)
+  (setq frame-background-mode 'light)
+  (mapc 'frame-set-background-mode (frame-list))
+  (enable-theme 'tabak))
+
 (defun tabak-toggle ()
   "Toggles the display property FRAME-BACKGROUND-MODE between dark and
 light."
   (interactive)
   (setq frame-background-mode
-   (if (equal frame-background-mode 'dark)
-       'light
-     'dark))
+	(if (equal frame-background-mode 'dark)
+	    'light
+	  'dark))
   (mapc 'frame-set-background-mode (frame-list))
   (enable-theme 'tabak))
 
@@ -89,8 +105,7 @@ light."
  
  ;; default face
  `(default
-    ,(tabak-face :background "background" :foreground "gray"
-                 :font "Source Code Pro" :height 109))
+    ,(tabak-face :background "background" :foreground "gray"))
  `(fringe
    ,(tabak-face :foreground "background-l" :background "background"))
  `(region
@@ -496,7 +511,7 @@ light."
  `(org-mode-line-clock-overrun
    ,(tabak-face :foreground "gray"))
  `(org-priority
-   ,(tabak-face :foreground "gray"))
+   ,(tabak-face :foreground "blue" :weight 'bold :slant 'italic))
  `(org-property-value
    ,(tabak-face :foreground "gray"))
  `(org-quote
@@ -542,7 +557,7 @@ light."
  `(org-checkbox-statistics-todo
    ,(tabak-face :foreground "gray"))
  `(org-done
-   ,(tabak-face :foreground "gray" :background "background"))
+   ,(tabak-face :foreground "green-l" :weight 'bold :slant 'italic))
  `(org-drawer
    ,(tabak-face :foreground "gray"))
  `(org-ellipsis
