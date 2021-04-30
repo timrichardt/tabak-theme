@@ -1,3 +1,11 @@
+;;; tabak-theme.el --- A mellow Emacs theme with dark and light variants. -*- lexical-binding: t -*-
+
+;; Copyright (C) 2015-2021 Tim Richardt
+
+;; Author: Tim Richardt <tim@richardt.io>
+;; URL: https://github.com/timrichardt/tabak-theme
+;; Version: 1.0.0
+;;
 ;;
 ;;              ████████╗ █████╗ ██████╗  █████╗ ██╗  ██╗
 ;;              ╚══██╔══╝██╔══██╗██╔══██╗██╔══██╗██║ ██╔╝
@@ -6,13 +14,8 @@
 ;;                 ██║   ██║  ██║██████╔╝██║  ██║██║  ██╗
 ;;                 ╚═╝   ╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
 ;;                        C O L O R   T H E M E
-;;
-;; ----------------------------------------------------------------------------
-;;  "THE BEER-WARE LICENSE" (Revision 42):
-;;  <tim@richardt.io> wrote this file. As long as you retain this notice you
-;;  can do whatever you want with this stuff. If we meet some day, and you think
-;;  this stuff is worth it, you can buy me a beer in return.
-;;  ----------------------------------------------------------------------------
+;; 
+
 
 (deftheme tabak
   "This is a dark/light Emacs color theme. The dark palette is a brownish
