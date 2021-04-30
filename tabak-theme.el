@@ -1,11 +1,15 @@
-;;; tabak-theme.el --- A mellow Emacs theme with dark and light variants. -*- lexical-binding: t -*-
+;;; tabak-theme.el --- A mellow theme with dark and light variants -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2015-2021 Tim Richardt
 
 ;; Author: Tim Richardt <tim@richardt.io>
 ;; URL: https://github.com/timrichardt/tabak-theme
 ;; Version: 1.0.0
+;; Package-Requires: ((emacs "24.1"))
 ;;
+
+;;; Commentary:
+
 ;;
 ;;              ████████╗ █████╗ ██████╗  █████╗ ██╗  ██╗
 ;;              ╚══██╔══╝██╔══██╗██╔══██╗██╔══██╗██║ ██╔╝
@@ -1079,3 +1083,5 @@ light."
 
 
 (provide-theme 'tabak)
+
+;;; tabak-theme.el ends here
