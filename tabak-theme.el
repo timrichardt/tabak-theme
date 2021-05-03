@@ -1084,7 +1084,7 @@ TABAK-PALETTE."
   (mapc 'frame-set-background-mode (frame-list))
   (enable-theme 'tabak))
 
-(defun tabak-toggle ()
+(defun tabak-theme-toggle ()
   "Toggle the display property FRAME-BACKGROUND-MODE between dark and light."
   (interactive)
   (setq frame-background-mode

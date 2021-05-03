@@ -48,11 +48,11 @@ by copying the repo into your `load-path`. Then
 
 `tabak-theme` uses `frame-background-mode` to determine
 colors. To toggle between dark and light variants, the function
-`tabak-toggle` is provided. It is convenient to bind this globally,
+`tabak-theme-toggle` is provided. It is convenient to bind this globally,
 for example
 
 ```
-(global-set-key (kbd "<C-F12>") 'tabak-toggle)
+(global-set-key (kbd "<C-F12>") 'tabak-theme-toggle)
 ```
 
 ### use-package
@@ -61,7 +61,7 @@ for example
 (use-package tabak-theme
   :commands (tabak-theme-dark)
   :init (tabak-theme-dark)
-  :bind (("<C-F12>" . tabak-toggle)))
+  :bind (("<C-F12>" . tabak-theme-toggle)))
 ```
 
 
