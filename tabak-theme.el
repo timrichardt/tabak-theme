@@ -6,6 +6,7 @@
 ;; URL: https://github.com/timrichardt/tabak-theme
 ;; Version: 1.0.0
 ;; Package-Requires: ((emacs "24.1"))
+;; SPDX-License-Identifier: Beerware
 
 ;;; Commentary:
 
