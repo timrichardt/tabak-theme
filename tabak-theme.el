@@ -4,19 +4,12 @@
 
 ;; Author: Tim Richardt <tim@richardt.io>
 ;; URL: https://github.com/timrichardt/tabak-theme
-;; Version: 1.0.0
+;; Keywords: theme
+;; Version: 2.0.0
 ;; Package-Requires: ((emacs "24.1"))
-;; SPDX-License-Identifier: Beerware
+;; SPDX-License-Identifier: GPL-3.0-or-later
 
-;; /*
-;; * ----------------------------------------------------------------------------
-;; * "THE BEER-WARE LICENSE" (Revision 42):
-;; * <phk@FreeBSD.ORG> wrote this file. As long as you retain this notice you
-;; * can do whatever you want with this stuff. If we meet some day, and you think
-;; * this stuff is worth it, you can buy me a beer in return Poul-Henning Kamp
-;; * ----------------------------------------------------------------------------
-;; */
-
+;; This file is not part of GNU Emacs.
 
 ;;; Commentary:
 
