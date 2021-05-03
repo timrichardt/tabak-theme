@@ -23,9 +23,9 @@
 ;;; Code:
 
 (deftheme tabak
-  "This is a dark/light Emacs color theme. The dark palette is a brownish
-variation of the famous zenburn. The light palette, in contrast, is
-higher in contrast.")
+  "A mellow color theme.
+The dark palette is a brownish variation of the famous zenburn. The light
+palette, in contrast, is higher in contrast.")
 
 (defvar tabak-palette
   '(("background-d" "#edd9ca" "#2e2926")
@@ -52,7 +52,8 @@ higher in contrast.")
     ("violet-d"     "#682485" "#897f94")
     ("violet"       "#842ea8" "#b4a9c2")
     ("violet-l"     "#a64bcc" "#ddd1ed"))
-  "Tabak color palette. The second and third column hold the values for
+  "The tabak color palette.
+The second and third column hold the values for
 the light and dark variant of the colorname in the first column.")
 
 (defsubst tabak-color-light (name)
@@ -64,9 +65,10 @@ the light and dark variant of the colorname in the first column.")
   (nth 2 (assoc name tabak-palette)))
 
 (defun tabak-face (&rest spec)
-  "Return a face specification. SPEC has to be a property list with face
-properties. Foreground and background have to have values of colornames of
-TABAK-PALETTE. TABAK-FACE evaluates to a face specification with display
+  "Return a face specification.
+SPEC has to be a property list with face
+properties.  Foreground and background have to have values of colornames of
+TABAK-PALETTE.  TABAK-FACE evaluates to a face specification with display
 properties dark and light and the colornames replaced by their values from
 TABAK-PALETTE."
   (let ((light (copy-sequence spec))
@@ -1058,22 +1060,21 @@ TABAK-PALETTE."
 ;; commands to enable the theme, and toggle the theme variants
 
 (defun tabak-theme-dark ()
-  "Enable tabak theme. Set FRAME-BACKGROUND-MODE to dark."
+  "Enable tabak theme.  Set FRAME-BACKGROUND-MODE to dark."
   (interactive)
   (setq frame-background-mode 'dark)
   (mapc 'frame-set-background-mode (frame-list))
   (enable-theme 'tabak))
 
 (defun tabak-theme-light ()
-  "Enable tabak theme. Set FRAME-BACKGROUND-MODE to light."
+  "Enable tabak theme.  Set FRAME-BACKGROUND-MODE to light."
   (interactive)
   (setq frame-background-mode 'light)
   (mapc 'frame-set-background-mode (frame-list))
   (enable-theme 'tabak))
 
 (defun tabak-toggle ()
-  "Toggles the display property FRAME-BACKGROUND-MODE between dark and
-light."
+  "Toggle the display property FRAME-BACKGROUND-MODE between dark and light."
   (interactive)
   (setq frame-background-mode
 	(if (equal frame-background-mode 'dark)
