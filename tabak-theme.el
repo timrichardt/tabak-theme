@@ -4,8 +4,8 @@
 
 ;; Author: Tim Richardt <tim@richardt.io>
 ;; URL: https://github.com/timrichardt/tabak-theme
-;; Keywords: theme
-;; Version: 2.0.0
+;; Keywords: faces
+;; Version: 2.0.1
 ;; Package-Requires: ((emacs "24.1"))
 ;; SPDX-License-Identifier: GPL-3.0-or-later
 
